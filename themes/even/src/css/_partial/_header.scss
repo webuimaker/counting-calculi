@@ -1,0 +1,31 @@
+// ==============================
+// Header
+// ==============================
+
+.header {
+  @include clearfix; 
+  padding: $header-padding;
+
+  @import '_header/logo';
+  @import '_header/menu';
+}
+
+
+@include max-screen() {
+  .header {
+    padding: 50px 0 0;
+    text-align: center;
+	margin-bottom: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    padding-left: 50px;
+  }
+  #header {
+    margin-bottom: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    padding-left: 50px;
+	}
+}
